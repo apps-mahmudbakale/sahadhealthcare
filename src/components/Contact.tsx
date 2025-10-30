@@ -44,8 +44,8 @@ export default function Contact() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-2">Phone</h3>
             <p className="text-gray-600 mb-2">Call us for immediate assistance</p>
-            <a href="tel:+15551234567" className="text-[#189F59] font-semibold hover:text-[#147a47] transition-colors">
-              +1 (555) 123-4567
+            <a href="tel:+2347048680000" className="text-[#189F59] font-semibold hover:text-[#147a47] transition-colors">
+              +234 704 868 0000
             </a>
           </div>
 
@@ -178,10 +178,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Visit Our Office</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    123 Medical Plaza, Suite 456<br />
-                    Healthcare District<br />
-                    New York, NY 10001<br />
-                    United States
+                   Plot. 1356 Tafawa Balewa Way, Behind Central Bank Central Business District<br />
+                  Abuja, Federal Capital Territory
                   </p>
                 </div>
               </div>

@@ -1,5 +1,29 @@
 import { Star } from 'lucide-react';
 import MRI from '../assets/products/product14.jpeg';
+import Xray from '../assets/products/product6.jpeg';
+import StaticXray from '../assets/products/product5.jpeg';
+import OperatingTable from '../assets/products/Electric-Operating-Table-Model-JHDS.webp';
+import Mammography from '../assets/products/MAMO.jpg';
+import CArmXray from '../assets/products/CARM.jpg';
+import PortableUltrasound from '../assets/products/Pultra.jpg';
+import DigitalUltrasound from '../assets/products/DUltra.jpg';
+import Dialysis from '../assets/products/dialysis.jpg';
+import ElectricBeds from '../assets/products/Electric bed.jpg';
+import Resuscitair from '../assets/products/res machine.jpg';
+import BabyCut from '../assets/products/baby cut.jpg';
+import EDTA from '../assets/products/EDA contaiber.jpg';
+import ScalpVein from '../assets/products/scalp vein.jpg';
+import Needle from '../assets/products/Needle.jpg';
+import TissueProcessor from '../assets/products/Tissue Processor.jpg';
+import BabyIncubator from '../assets/products/babyicubator.jpg';
+import AnaestheticMachine from '../assets/products/Anaestic.jpg';
+import PatientExaminationBed from '../assets/products/Patient Examination Bed.jpg';
+import UrineContainer from '../assets/products/Urine.jpg';
+
+
+
+
+
 
 const products = [
   {
@@ -11,141 +35,156 @@ const products = [
     inStock: true,
   },
   {
-    name: 'Professional Stethoscope',
+    name: 'Digital Mobile X‑ray Machine',
     category: 'Diagnostic Equipment',
     price: '$129.99',
     rating: 4.9,
-    image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: Xray,
     inStock: true,
   },
   {
-    name: 'Infrared Thermometer',
+    name: 'Static X‑ray Machine',
     category: 'Diagnostic Equipment',
     price: '$45.99',
     rating: 4.7,
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: StaticXray,
     inStock: true,
   },
   {
-    name: 'Pulse Oximeter',
+    name: 'Fully Electric Operating Table',
     category: 'Patient Monitoring',
     price: '$34.99',
     rating: 4.6,
-    image: 'https://images.pexels.com/photos/6823567/pexels-photo-6823567.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: OperatingTable,
     inStock: true,
   },
   {
-    name: 'Disposable Surgical Gloves (100pcs)',
+    name: 'Mammography Machine',
     category: 'Medical Consumables',
     price: '$24.99',
     rating: 4.8,
-    image: 'https://images.pexels.com/photos/4386466/pexels-photo-4386466.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: Mammography,
     inStock: true,
   },
   {
-    name: 'N95 Face Masks (50pcs)',
+    name: 'Portable Ultrasound Machine',
     category: 'Medical Consumables',
     price: '$39.99',
     rating: 4.7,
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
-    inStock: true,
+    image: PortableUltrasound,
   },
   {
-    name: 'Sterile Syringes Set (50pcs)',
+    name: 'C‑arm X‑ray Machine',
     category: 'Medical Consumables',
     price: '$18.99',
     rating: 4.9,
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: CArmXray,
     inStock: true,
   },
   {
-    name: 'Medical Bandage Roll Pack',
+    name: 'Digital Ultrasound Machine',
     category: 'General Supplies',
     price: '$12.99',
     rating: 4.5,
-    image: 'https://images.pexels.com/photos/6823568/pexels-photo-6823568.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: DigitalUltrasound,
     inStock: true,
   },
   {
-    name: 'Digital Microscope',
+    name: 'Dialysis chair',
     category: 'Laboratory Equipment',
     price: '$599.99',
     rating: 4.8,
-    image: 'https://images.pexels.com/photos/2280547/pexels-photo-2280547.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: Dialysis,
     inStock: true,
   },
   {
-    name: 'Medical Centrifuge',
+    name: 'Electric Beds',
     category: 'Laboratory Equipment',
     price: '$449.99',
     rating: 4.7,
-    image: 'https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: ElectricBeds,
     inStock: true,
   },
   {
-    name: 'ECG Machine (12-Lead)',
+    name: 'Resuscitair Machine',
     category: 'Diagnostic Equipment',
     price: '$1,299.99',
     rating: 4.9,
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: Resuscitair,
     inStock: true,
   },
   {
-    name: 'Surgical Scissors Set',
+    name: 'Baby Cut',
     category: 'General Supplies',
     price: '$54.99',
     rating: 4.6,
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: BabyCut,
     inStock: true,
   },
   {
-    name: 'Medical Oxygen Concentrator',
+    name: 'EDTA Container',
     category: 'Emergency Equipment',
     price: '$799.99',
     rating: 4.8,
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: EDTA,
     inStock: true,
   },
   {
-    name: 'Automatic Defibrillator (AED)',
+    name: 'Scalp Vein',
     category: 'Emergency Equipment',
     price: '$1,599.99',
     rating: 4.9,
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: ScalpVein,
     inStock: true,
   },
   {
-    name: 'Medical Test Tube Set (100pcs)',
+    name: 'Needle',
     category: 'Laboratory Equipment',
     price: '$29.99',
     rating: 4.7,
-    image: 'https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: Needle,
     inStock: true,
   },
   {
-    name: 'Wheelchair - Standard Model',
+    name: 'Fully Automated Tissue Processor',
     category: 'General Supplies',
     price: '$249.99',
     rating: 4.6,
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: TissueProcessor,
     inStock: true,
   },
   {
-    name: 'Medical Stretcher',
+    name: 'Baby Incubator',
     category: 'Emergency Equipment',
     price: '$899.99',
     rating: 4.7,
-    image: 'https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: BabyIncubator,
     inStock: true,
   },
   {
-    name: 'Antiseptic Solution (5L)',
+    name: 'Anaesthetic Machine',
     category: 'General Supplies',
     price: '$22.99',
     rating: 4.8,
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600',
+    image: AnaestheticMachine,
     inStock: true,
   },
+   {
+    name: 'Patient Examination Bed',
+    category: 'General Supplies',
+    price: '$22.99',
+    rating: 4.8,
+    image: PatientExaminationBed,
+    inStock: true,
+  },
+   {
+    name: 'Urine Container',
+    category: 'General Supplies',
+    price: '$22.99',
+    rating: 4.8,
+    image: UrineContainer,
+    inStock: true,
+  }
 ];
 
 const whatsappNumber = '1234567890';

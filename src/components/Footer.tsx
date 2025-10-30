@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import Logo from '../logo.png';
 
 export default function Footer() {
   return (
@@ -8,14 +9,10 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-6">
               <img 
-                src="/logo.png" 
+                src={Logo} 
                 alt="MedEquip Logo" 
                 className="h-12 w-auto"
               />
-              <div>
-                <h3 className="text-xl font-bold text-white">Sahad Healthcare</h3>
-                <p className="text-xs text-gray-400">Your Trusted Medical Partner</p>
-              </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Your trusted partner for quality medical equipment and consumables since 1998.
@@ -52,27 +49,22 @@ export default function Footer() {
             <h4 className="text-white font-bold text-lg mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="hover:text-[#189F59] transition-colors">
+                <a href="#about" className="hover:text-[#189F59] transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#189F59] transition-colors">
+                <a href="#products" className="hover:text-[#189F59] transition-colors">
                   Products
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#189F59] transition-colors">
-                  Services
+                <a href="#team" className="hover:text-[#189F59] transition-colors">
+                  Team
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-[#189F59] transition-colors">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-[#189F59] transition-colors">
+                <a href="#contact" className="hover:text-[#189F59] transition-colors">
                   Contact
                 </a>
               </li>
@@ -116,20 +108,20 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-teal-400 flex-shrink-0 mt-1" />
                 <span className="text-sm">
-                  123 Medical Plaza, Suite 456<br />
-                  New York, NY 10001
+                Plot. 1356 Tafawa Balewa Way, Behind Central Bank Central Business District<br />
+                  Abuja, Federal Capital Territory
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-teal-400 flex-shrink-0" />
                 <a href="tel:+15551234567" className="hover:text-teal-400 transition-colors">
-                  +1 (555) 123-4567
+                  +234 704 868 0000
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-teal-400 flex-shrink-0" />
                 <a href="mailto:info@medequip.com" className="hover:text-teal-400 transition-colors">
-                  info@medequip.com
+                  info@sahadhealthcare.com
                 </a>
               </li>
             </ul>
@@ -143,7 +135,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              &copy; 2024 MedEquip. All rights reserved.
+              &copy; 2024 Sahad Health Care. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="hover:text-teal-400 transition-colors">
