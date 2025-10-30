@@ -1,12 +1,4 @@
-import { Users, Target, TrendingUp, CheckCircle, Award, Shield, Heart, Globe, Clock, Package } from 'lucide-react';
-
-const milestones = [
-  { year: '1998', title: 'Company Founded', description: 'Started as a small medical supply distributor' },
-  { year: '2005', title: 'ISO Certification', description: 'Achieved ISO 13485 certification for quality management' },
-  { year: '2012', title: 'Regional Expansion', description: 'Expanded operations to serve 5 additional states' },
-  { year: '2018', title: 'Digital Innovation', description: 'Launched online ordering platform and inventory management' },
-  { year: '2023', title: 'Industry Leader', description: 'Recognized as top medical supplier with 5000+ clients' },
-];
+import { Users, Target, TrendingUp, CheckCircle, Award, Shield, Heart, Globe, Clock, Package, Activity, Stethoscope, Syringe, Microscope, Bed, HeartPulse } from 'lucide-react';
 
 const achievements = [
   { number: '25+', label: 'Years of Excellence', icon: Award },
@@ -48,6 +40,39 @@ const coreValues = [
   },
 ];
 
+const specialties = [
+  { 
+    title: 'Radiological Equipment',
+    icon: Activity,
+    description: 'State-of-the-art imaging and diagnostic equipment including X-ray, MRI, and ultrasound systems.'
+  },
+  { 
+    title: 'Theater Equipment',
+    icon: Stethoscope,
+    description: 'Complete range of surgical and operating room equipment for all medical procedures.'
+  },
+  { 
+    title: 'Laboratory Instruments',
+    icon: Microscope,
+    description: 'Precision lab equipment and analyzers for accurate diagnostic testing and research.'
+  },
+  { 
+    title: 'Hospital Beds',
+    icon: Bed,
+    description: 'Wide selection of hospital beds and patient care systems for all healthcare settings.'
+  },
+  { 
+    title: 'Medical Consumables',
+    icon: Syringe,
+    description: 'Comprehensive range of disposable medical supplies and consumables.'
+  },
+  { 
+    title: 'Patient Care',
+    icon: HeartPulse,
+    description: 'Equipment and supplies designed for patient comfort and effective treatment.'
+  },
+];
+
 export default function About() {
   return (
     <div className="py-20 bg-white">
@@ -57,24 +82,34 @@ export default function About() {
             About Sahad Healthcare
           </h2>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mt-4 mb-6">
-            Your Trusted Healthcare Partner Since 1998
+            Your Trusted Healthcare Partner
           </h2>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            For over two decades, Sahad Healthcare has been dedicated to providing healthcare facilities with the highest quality medical equipment and consumables, enabling better patient care across the nation.
+          <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            As a leading provider of medical equipment and supplies, Sahad Healthcare is committed to delivering exceptional quality products and services to healthcare facilities across the region. Our comprehensive range of medical solutions is designed to meet the evolving needs of modern healthcare providers.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Expertise</h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Founded in 1998, Sahad Healthcare began with a simple mission: to make quality medical equipment accessible to healthcare facilities of all sizes. What started as a small distribution center has grown into one of the region's most trusted medical supply partners.
+              At Sahad Healthcare, we specialize in providing comprehensive medical equipment solutions tailored to meet the diverse needs of healthcare facilities. Our extensive product portfolio includes:
             </p>
+            <div className="grid grid-cols-2 gap-4 mb-8">
+              {specialties.map((specialty, index) => {
+                const Icon = specialty.icon;
+                return (
+                  <div key={index} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                    <div className="bg-teal-100 p-2 rounded-lg">
+                      <Icon className="w-5 h-5 text-teal-600" />
+                    </div>
+                    <span className="font-medium text-gray-800">{specialty.title}</span>
+                  </div>
+                );
+              })}
+            </div>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              Today, we serve over 5,000 healthcare facilities including hospitals, clinics, laboratories, and emergency services. Our commitment to quality, reliability, and customer service has remained unchanged throughout our growth.
-            </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              We understand that in healthcare, every second counts. That's why we've built a robust supply chain, maintain extensive inventory, and offer 24/7 support to ensure your facility never faces equipment shortages during critical moments.
+              Our team of experienced professionals works closely with healthcare providers to understand their unique requirements and deliver customized solutions that enhance patient care and operational efficiency.
             </p>
             <div className="space-y-4">
               {[
@@ -152,29 +187,6 @@ export default function About() {
           </div>
         </div>
 
-        <div className="mb-20">
-          <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Journey</h3>
-          <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-teal-500 to-cyan-500 hidden lg:block"></div>
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <div key={milestone.year} className={`flex flex-col lg:flex-row gap-8 items-center ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
-                  <div className={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
-                    <div className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                      <div className="text-teal-600 font-bold text-xl mb-2">{milestone.year}</div>
-                      <h4 className="text-xl font-bold text-gray-900 mb-2">{milestone.title}</h4>
-                      <p className="text-gray-600">{milestone.description}</p>
-                    </div>
-                  </div>
-                  <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg z-10 flex-shrink-0">
-                    <div className="w-8 h-8 bg-white rounded-full"></div>
-                  </div>
-                  <div className="flex-1"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
 
         <div className="mb-20">
           <h3 className="text-3xl font-bold text-gray-900 mb-4 text-center">Our Core Values</h3>

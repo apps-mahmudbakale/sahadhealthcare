@@ -1,12 +1,13 @@
 import { Star } from 'lucide-react';
+import MRI from '../assets/products/product14.jpeg';
 
 const products = [
   {
-    name: 'Digital Blood Pressure Monitor',
+    name: 'MRI Machine',
     category: 'Diagnostic Equipment',
     price: '$89.99',
-    rating: 4.8,
-    image: 'https://images.pexels.com/photos/7088531/pexels-photo-7088531.jpeg?auto=compress&cs=tinysrgb&w=600',
+    rating: 2.8,
+    image: MRI,
     inStock: true,
   },
   {

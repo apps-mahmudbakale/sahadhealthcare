@@ -1,25 +1,42 @@
 import { ArrowRight, Shield, Truck, Award, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import Slide1 from '../assets/DSC_0113.jpg';
+import Slide2 from '../assets/DSC_0769.jpg';
+import Slide3 from '../assets/DSC_0115.jpg';
+import Slide4 from '../assets/DSC_0751.jpg';
+import Slide5 from '../assets/DSC_0764.jpg';
 
 const slides = [
   {
     title: 'Premium Medical Equipment & Consumables',
     description: 'Providing healthcare facilities with quality medical equipment, diagnostic tools, and consumables since 1998. Your trusted partner in healthcare solutions.',
     badge: 'Trusted Medical Solutions',
-    image: 'https://images.pexels.com/photos/3825517/pexels-photo-3825517.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: Slide1
   },
   {
     title: 'Advanced Diagnostic Solutions',
     description: 'State-of-the-art diagnostic equipment designed to deliver accurate results and improve patient outcomes in modern healthcare facilities.',
     badge: 'Innovative Technology',
-    image: 'https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: Slide2
   },
   {
     title: 'Quality You Can Trust',
     description: 'FDA approved products meeting the highest standards of safety and reliability. Over 25 years of excellence in medical supply distribution.',
     badge: 'FDA Certified',
-    image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1200',
+    image: Slide3
   },
+  {
+    title: 'Medical Equipment & Consumables',
+    description: 'Providing healthcare facilities with quality medical equipment, diagnostic tools, and consumables since 1998. Your trusted partner in healthcare solutions.',
+    badge: 'Trusted Medical Solutions',
+    image: Slide4
+  },
+  {
+    title: 'Medical Equipment & Consumables',
+    description: 'Providing healthcare facilities with quality medical equipment, diagnostic tools, and consumables since 1998. Your trusted partner in healthcare solutions.',
+    badge: 'Trusted Medical Solutions',
+    image: Slide5
+  }
 ];
 
 export default function Hero() {
